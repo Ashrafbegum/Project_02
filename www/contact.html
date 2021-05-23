@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mr. Coffee | Contact Us Page</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Mr Coffee Website">
+        <meta name="author" content="Ashraf Unnisa Begum">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="application.css">
+        <script type="text/javascript" src="form.js" defer></script>
+
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img id="logo" src="./Assets/full_logo_white.png" alt="logo" width="100" height="80"/>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Qui sommes-nous?</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>  
+            </nav>
+        </header>
+        
+        <main id="main">
+            <div>
+                <img src="./Assets/logo_mrcoffee.png" alt="Mr coffee black logo" id="main-logo"/>
+            </div>
+        
+
+            <form novaidate class="contact-form" id="contactForm">
+
+            <h2>Dites nous tout !</h2>
+            <div class="field">
+                <label for="surname">Nom *</label>
+                <input id="surname" type="text" name="surname" autofocus required />
+                <div class="error" id="surNameErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Prénom *</label>
+                <input id="firstname" type="text" name="firstname" required />
+                <div class="error" id="firstNameErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Téléphone</label>
+                <input id="phone" type="number" name="phone" maxlength="10">
+                <div class="error" id="phoneErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Adresse mail *</label>
+                <input id="email" type="text" name="email" required />
+                <div class="error" id="emailErr"></div>
+            </div>
+            
+            <div class="field">
+                <label>Message *</label> 
+                <textarea id="msg" col="55" name="message" placeholder="Tapez votre message ici" required ></textarea>
+                <div class="error" id="msgErr"></div>
+            </div>
+
+            <div class="center-button">
+                <button class="btn" id="submitButton" type="submit">ENVOYER</button>
+            </div>
+        </form>
+
+        <div class="popup-modal" id="modal">                                                                    
+               <div class="left-aligned">
+                   <img src ="/Assets/logo_dark.png" alt="Mr. Coffee dark logo" width="80" />
+                   <div class="inline" id="#text">
+                      <h2>MERCI</h2>
+                       <h2>Votre message a bien été envoyé !</h2>
+                   </div>
+
+                </div>
+                <div class="display-msg" >
+                    <p>Nous essaierons d’y répondre au mieux dans les plus brefs
+                   délais. À bientot chez Mr.Coffee</p>
+               </div>    
+
+            <div class="center-button"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          >
+                <button class="btn" id="closeButton" name = "closeButton" type="submit">FERMER</button>
+            </div>
+        </div>   
+
+        <section>
+    
+            <div class="contact-heading">
+                <h2>On vous attend !</h2>
+            </div>
+            
+            <div class="contact-address">
+                <p>Mr.Coffee</p>
+                <p>15 place Jules Guesde</p>
+                <p>75006 Paris </p>
+                
+                <br />
+            
+                <p>Tel : +33 9 46 25 78 45</p>
+                <p>Mail :contact@mr-coffee.com</p>
+          
+            </div>
+        
+            <div class="map">
+                <img src="/Assets/carte_contact.png" alt="The picture of map showing the address of the Mr. Coffee shop" />
+            </div>
+            
+        </section>
+        </main>
+
+        <footer>
+            <img class ="footer-logo" src="/Assets/logo_blanc.png" alt="Mr.Coffee logo in white" />
+            <div class ="social-media">
+               <p>Suivez nous sur les réseaux sociaux !</p>
+               <a href="https://linkedin.com/" target="_blank">
+                 <img src="/Assets/logo_linkedin.png" alt="LinkedIn logo" />
+               </a>
+     
+               <a href="https://www.twitter.com" target="_blank">
+                 <img src="/Assets/logo_twitter.png" alt="Twitter Logo" />
+               </a>
+     
+               <a href="https://www.facebook.com/" target="_blank">
+                 <img src="/Assets/logo_facebook.png" alt="Facebook Logo" />
+               </a>
+            </div>
+        </footer>
+
+    </body>
+</html>
