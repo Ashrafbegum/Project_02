@@ -22,10 +22,11 @@ nav {
     height: 100px;
     background-color:  #6c7c8b;
     line-height: 100px;
+    display: flex;
+    justify-content: space-between;
    }
 
 nav ul {
-    float: right;
     margin-right: 30px;
 }
 
@@ -346,10 +347,12 @@ form input {
   height: 58px;
   margin-bottom: 3%;
   font-size: 30px;
+  padding-left: 20px;
 }
 
 form textarea {
   font-size: 30px;
+  padding-left: 20px;
 }
 textarea::placeholder {
   color: white;
@@ -392,6 +395,7 @@ form .btn{
   border: 1px solid #888;
   width: 60%; 
   background-color: #fefefe;
+  overflow-y: scroll;
 }
 
 .left-aligned {
